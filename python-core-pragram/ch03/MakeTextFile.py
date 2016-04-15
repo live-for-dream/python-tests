@@ -18,6 +18,7 @@ def input_filename():
 def input_data():
     'get user input util . charactor'
     all = []
+    print 'input file data:'
     while True:
         entry = raw_input('> ')
         if entry == '.':
@@ -28,7 +29,7 @@ def input_data():
 def main():
     'main function'
 
-    pdb.set_trace()    
+#    pdb.set_trace()    
     print('START:')
     fname = input_filename()
     fdata = input_data()
@@ -38,5 +39,5 @@ def main():
     fobj.close()
     print('DONE')
 if __name__ == '__main__':    
-    pdb.set_trace()  
+#    pdb.set_trace()  
     main()  
